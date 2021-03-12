@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+     <!-- font awsome -->
+     <script src="https://kit.fontawesome.com/3d0e69b06a.js" crossorigin="anonymous"></script>
+     <!-- css -->
+     <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--navbar  -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img id="navLogo" class=img-fluid" src="img/MountainBeard.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navContent">
+          <form class="form-inline my-2 my-lg-0">
+            <div class="input-group">
+              <input class="form-control py-2 border-right-0 border" type="search" value="search" id="example-search-input">
+              <span class="input-group-append">
+                  <div class="input-group-text bg-white"><i class="fa fa-search"></i></div>
+              </span>
+          </div>
+          </form>
+          <ul class="navbar-nav ml-auto navSpacing">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-mountain fa-sm"></i> Home</a>
+            </li>
+            <div class="navBorder"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <div class="navBorder"></div>
+            <li class="nav-item">
+              <a class="nav-link active" href="Shop.html">Shop</a>
+            </li>
+            <div class="navBorder"></div>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#signIn">SignIn <i class="fas fa-user"></i></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link btn btn-outline-secondary btn-sm px-3" href="cart.html"><i class="fas fa-shopping-cart"></i>  Your Cart</a>
+            </li>
+          </ul>   
+        </div>
+      </nav>
+
+
+      <!-- modal -->
+     <div id="signIn" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h3 class="modal-title">Sign in</h3>
+                    <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email Address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox">
+                                      <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-dark btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Products -->
+    <div id="header" class="container-fluid text-center">
+        <div class="row stuff">
+          <div class="col things">
+            <h1 class="display-4">Mountain Giant</h1>
+            <p class="lead">Product page</p>
+            <hr class="mb-4">
+            <form class="form  my-lg-0">
+                <input class="form-control ml-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark btn-lg px-4 my-2" type="submit">Search</button>
+              </form>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- cards -->
+    <div class="container text-center">
+        <div class="row mt-5">
+            <div class="col">
+                <h2 mb-3>Shop All Products</h2>
+                <div id="showcase" class="row mt-4">
+                    <div class="col-12 col-md-4">
+                    <div class="card shop bx-shadow" >
+                        <img class="card-img-top" src="img/christin-hume-0MoF-Fe0w0A-unsplash.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Oils</h5>
+                            <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                            <p class="cost">15.99</p>
+                            <a href="#" class="btn btn-outline-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shop bx-shadow">
+                        <img class="card-img-top" src="img/supply-USghnHKesaM-unsplash.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Beard care</h5>
+                            <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                            <p class="cost">15.99</p>
+                            <a href="#" class="btn btn-outline-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card shop bx-shadow">
+                        <img class="card-img-top" src="img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Brushes</h5>
+                            <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                            <p class="cost">15.99</p>
+                            <a href="#" class="btn btn-outline-dark">Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div> 
+        <div id="showcase" class="row mt-4">
+            <div class="col-12 col-md-4">
+            <div class="card shop bx-shadow">
+                <img class="card-img-top" src="img/christin-hume-0MoF-Fe0w0A-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Oils</h5>
+                    <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                    <p class="cost">15.99</p>
+                    <a href="#" class="btn btn-outline-dark">Shop</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shop bx-shadow">
+                    <img class="card-img-top" src="img/supply-USghnHKesaM-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Beard Care</h5>
+                        <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                        <p class="cost">15.99</p>
+                        <a href="#" class="btn btn-outline-dark">Shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shop bx-shadow">
+                    <img class="card-img-top" src="img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Brushes</h5>
+                        <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                        <p class="cost">15.99</p>
+                        <a href="#" class="btn btn-outline-dark">Shop</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div id="showcase" class="row mt-4">
+            <div class="col-12 col-md-4">
+            <div class="card shop bx-shadow">
+                <img class="card-img-top" src="img/christin-hume-0MoF-Fe0w0A-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Oils</h5>
+                    <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                    <p class="cost">15.99</p>
+                    <a href="#" class="btn btn-outline-dark">Shop</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shop bx-shadow">
+                    <img class="card-img-top" src="img/supply-USghnHKesaM-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Beard Care</h5>
+                        <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                        <p class="cost">15.99</p>
+                        <a href="#" class="btn btn-outline-dark">Shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shop bx-shadow">
+                    <img class="card-img-top" src="img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Brushes</h5>
+                        <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                        <p class="cost">15.99</p>
+                        <a href="#" class="btn btn-outline-dark">Shop</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="showcase" class="row mt-4">
+            <div class="col-12 col-md-4">
+            <div class="card shop bx-shadow">
+                <img class="card-img-top" src="img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Oils</h5>
+                    <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                    <p class="cost">15.99</p>
+                    <a href="#" class="btn btn-outline-dark">Shop</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shop bx-shadow">
+                    <img class="card-img-top" src="img/christin-hume-0MoF-Fe0w0A-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Oils</h5>
+                        <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                        <p class="cost">15.99</p>
+                        <a href="#" class="btn btn-outline-dark">Shop</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shop bx-shadow">
+                    <img class="card-img-top" src="img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Blades</h5>
+                        <p class="card-text"><i class="fas fa-star"></i> Stars</p>
+                        <p class="cost">15.99</p>
+                        <a href="#" class="btn btn-outline-dark">Shop</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer mt-5  text-center ">
+        <div class="container">
+            <div class="row">
+              <div class="col-3 mt-4 d-none d-md-block">
+                  <img class="footerIcon " src="img/MountainBeard.jpg" alt="">
+              </div>
+                <div class="col-4 col-md-3 mt-4">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="#">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-3 mt-4">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                </div>
+                <div class="col-4 col-md-3 mt-4">
+                    <h5>products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Oils</a></li>
+                        <li><a href="#">Kits</a></li>
+                        <li><a href="#">Brushes</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col">
+                    <hr class=" hrStyle">
+                    <h5 class="footCompName">Mountain Giant</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+       <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+       
+    <!-- modal -->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+</body>
+</html>

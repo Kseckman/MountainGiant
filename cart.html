@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+     <!-- font awsome -->
+     <script src="https://kit.fontawesome.com/3d0e69b06a.js" crossorigin="anonymous"></script>
+     <!-- css -->
+     <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+<!--navbar  -->
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><img id="navLogo" class=img-fluid" src="img/MountainBeard.jpg" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navContent">
+    <form class="form-inline my-2 my-lg-0">
+      <div class="input-group">
+        <input class="form-control py-2 border-right-0 border" type="search" value="search" id="example-search-input">
+        <span class="input-group-append">
+            <div class="input-group-text bg-white"><i class="fa fa-search"></i></div>
+        </span>
+    </div>
+    </form>
+    <ul class="navbar-nav ml-auto navSpacing">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><i class="fas fa-mountain fa-sm"></i> Home</a>
+      </li>
+      <div class="navBorder"></div>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <div class="navBorder"></div>
+      <li class="nav-item">
+        <a class="nav-link" href="Shop.html">Shop</a>
+      </li>
+      <div class="navBorder"></div>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SignIn <i class="fas fa-user"></i></a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link btn btn-outline-secondary btn-sm px-3" href="cart.html"><i class="fas fa-shopping-cart"></i>  Your Cart</a>
+      </li>
+    </ul>   
+  </div>
+</nav>
+    
+
+
+
+
+    <!-- footer -->
+    <footer class="footer mt-5  text-center ">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 mt-4">
+                <h5>Menu</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">shop</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="col-4 mt-4">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+            </div>
+            <div class="col-4 mt-4">
+              <h5>products</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Oils</a></li>
+                  <li><a href="#">Kits</a></li>
+                  <li><a href="#">Brushes</a></li>
+                  <li><a href="#">Other</a></li>
+              </ul>
+          </div>
+        </div>
+        </div>
+    </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

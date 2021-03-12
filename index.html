@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/3d0e69b06a.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+    <!-- flicky -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+    <!--navbar  -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img id="navLogo" class=img-fluid" src="img/MountainBeard.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navContent">
+        <form class="form-inline my-2 my-lg-0">
+          <div class="input-group">
+            <input class="form-control py-2 border-right-0 border" type="search" value="search" id="example-search-input">
+            <span class="input-group-append">
+                <div class="input-group-text bg-white"><i class="fa fa-search"></i></div>
+            </span>
+        </div>
+        </form>
+        <ul class="navbar-nav ml-auto navSpacing">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fas fa-mountain fa-sm"></i> Home</a>
+          </li>
+          <div class="navBorder"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <div class="navBorder"></div>
+          <li class="nav-item">
+            <a class="nav-link" href="Shop.html">Shop</a>
+          </li>
+          <div class="navBorder"></div>
+          <li class="nav-item">
+            <a role="button" class="nav-link" href="#" data-toggle="modal" data-target="#signIn">SignIn <i class="fas fa-user"></i></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link btn btn-outline-secondary btn-sm px-3" href="cart.html ><i class="fas fa-shopping-cart"></i>  Your Cart</a>
+          </li>
+        </ul>   
+      </div>
+    </nav>
+
+     <!-- modal -->
+     <div id="signIn" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header bg-dark text-light">
+                  <h3 class="modal-title">Sign in</h3>
+                  <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <form action="">
+                          <div class="form-row">
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="loginEmail">Email Address</label>
+                                  <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                              </div>
+                              <div class="form-group col-12">
+                                  <label class="sr-only" for="loginPassword">Password</label>
+                                  <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                              </div>
+                              <div class="col">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                              <button type="submit" class="btn btn-dark btn-sm ml-1">Sign in</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div id="header" class="container-fluid text-center">
+      <div class="row stuff">
+        <div class="col things">
+          <h1 class="display-4">Mountain Giant</h1>
+          <p class="lead">For the distinguished gentelman</p>
+          <hr class="mb-4">
+          <p>Bringing you refinement balanced with a rugged edge</p>
+          <p class="lead">
+            <a href="shop" class="btn btn-dark btn-lg px-4" href="#" role="button">Shop Now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- featured items -->
+    <div class="container-fluid" >
+        <div class="row mt-5">
+            <div class="col">
+                <h2 class="text-center mb-3">Featured Items</h2>
+              <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="img/anshu-a-7n5_0j7b7Hg-unsplash.jpg" alt="First slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Premier Oil</h5>
+                        <p>Woody scent with a clean finish</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg" alt="Second slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Edge trimming kit</h5>
+                        <p>Old fassioned line care</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="img/supply-USghnHKesaM-unsplash.jpg" alt="Third slide">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Balm and conditioner</h5>
+                        <p>Protect your beard all day</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="col-lg-6 text-center align-items-center featured">
+                <h2 class="mb-3">Some words</h2>
+                <div class="row">
+                  <div class="col-md-6 text-center align-self-center">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet debitis cum vel, nemo magnam commodi totam voluptas tempore maiores porro necessitatibus error quibusdam deserunt, doloribus provident. Reiciendis quo tempore placeat!</p>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-end align mt-4 pr-0">
+                    <a href=""><img class="poly  d-block-md align-self-center pr-0" src="img/MountainBeard.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div> -->
+        </div>
+
+        <div class="row mt-5 my-0 imgw">
+          <div id="imgback" class="col px-0">
+            <div class="col imgover">
+              <h3>Some words</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum, facere dolore error pariatur quo placeat exercitationem quis vero cumque?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- catagories -->
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h2 mb-3>Shop By Catagory</h2>
+                <div class="row mt-4">
+                    <div class="col-sm-12 col-lg-4 catImg1">
+                      <a href="shop.html"><img class="img-fluid cat1 bx-shadow" src="https://picsum.photos/300/431" alt="Responsive image"></a>
+                      <h5>Kits</h5>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 crop">
+                      <a href="shop.html"><img class="img-fluid bx-shadow" src="img/christin-hume-0MoF-Fe0w0A-unsplash.jpg" alt="Responsive image"></a>
+                      <h5>Oils</h5>
+                        <a href=""><img class="img-fluid bx-shadow" src="img/supply-USghnHKesaM-unsplash.jpg" alt="Responsive image"></a>
+                        <h5>beard care</h5>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                      <div class="crop">
+                        <a href="shop.html"><img class="img-fluid bx-shadow" src="img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg" alt="Responsive image"></a>
+                        <h5>Brushes</h5>
+                      </div>
+                      <div class="crop">
+                        <a href="shop.html"><img class="img-fluid bx-shadow" src="img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg" alt="Responsive image"></a>
+                        <h5>Blades</h5>
+                      </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 my-0">
+          <div class="col px-0 img">
+            <img class="img-fluid" src="img/anshu-a-7n5_0j7b7Hg-unsplash.jpg" alt="">
+          </div>
+        </div>
+
+
+        <!-- subscribe -->
+        <div class="row my-5 align-items-center sub">
+          <div class="col-lg-6 text-center text-md-left">
+            <h3>Join the Club</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, ad!</p>
+          </div>
+          <div class="col-lg-6">
+              <form class="form">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <div class="input-group">
+                    <input type="email" class="form-control py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <span class="input-group-append">
+                      <button type="submit" class="btn btn-dark px-4">Submit</button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+          </div> 
+        </div>   
+    </div>
+
+      <!-- footer -->
+      <footer class="footer mt-5  text-center ">
+        <div class="container">
+            <div class="row">
+              <div class="col-3 mt-4 d-none d-md-block">
+                  <img class="footerIcon " src="img/MountainBeard.jpg" alt="">
+              </div>
+                <div class="col-4 col-md-3 mt-4">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">shop</a></li>
+                        <li><a href="#">Sign up</a></li>
+                    </ul>
+                </div>
+                <div class="col-4 col-md-3 mt-4">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                </div>
+                <div class="col-4 col-md-3 mt-4">
+                    <h5>products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Oils</a></li>
+                        <li><a href="#">Kits</a></li>
+                        <li><a href="#">Brushes</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col">
+                    <hr class=" hrStyle">
+                    <h5 class="footCompName">Mountain Giant</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+     <!-- JS -->
+     <script src="style.js"></script>
+    <!-- flicky -->
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+ 
+    <!-- modal -->
+    <script>
+      $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').trigger('focus')
+      })
+  </script>
+
+</body>
+</html>
