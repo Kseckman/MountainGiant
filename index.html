@@ -11,11 +11,13 @@
     <!-- google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+     <!-- flicky -->
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- css -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
     <!-- flicky -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
     <!--navbar  -->
@@ -30,7 +32,7 @@
           <div class="input-group">
             <input class="form-control py-2 border-right-0 border" type="search" value="search" id="example-search-input">
             <span class="input-group-append">
-                <div class="input-group-text bg-white"><i class="fa fa-search"></i></div>
+                <button type="submit" class="input-group-text bg-white"><i class="fa fa-search"></i></button>
             </span>
         </div>
         </form>
@@ -109,14 +111,52 @@
         </div>
       </div>
     </div>
-    <!-- featured items -->
+
+
+    
     <div class="container-fluid" >
-        <div class="row mt-5">
+      <!-- Flickity HTML init -->
+      <div class="row mt-5">
+        <div class="col">
+          <h1 class="text-center mb-3">Featured Items</h1>
+        </div>
+      </div>
+      <div class="carousel"
+ data-flickity='{ "wrapAround": true }'>
+        <div id="cell1" class="carousel-cell cell">
+          <div class="overlay">
+            <h5>Premier Oil</h5>
+            <p>Woody scent with a clean finish</p>
+          </div>
+        </div>
+        <div id="cell2" class="carousel-cell cell">
+          <div class="overlay">
+            <h5>Edge trimming kit</h5>
+            <p>Old fassioned line care</p>
+          </div>
+        </div>
+        <div id="cell3" class="carousel-cell cell">
+          <div class="overlay">
+            <h5>Edge trimming kit</h5>
+            <p>Old fassioned line care</p>
+          </div>
+        </div>
+        <div id="cell4" class="carousel-cell cell">
+          <div class="overlay">
+            <h5>Balm and conditioner</h5>
+            <p>Protect your beard all day</p>
+          </div>
+        </div>
+        <div id="cell5" class="carousel-cell cell"></div>
+      </div>
+
+    <!-- Experience items -->
+      <div class="row mt-5">
           <div class="col-3 d-none d-lg-block iconArrow px-0">
             <img class="img-fluid poly" src="img/MountainBeard.jpg" alt="">
           </div>
             <div class="col-12 col-lg-6">
-                <h1 class="text-center mb-3">Featured Items</h1>
+                <h1 class="text-center mb-3">Experience</h1>
               <div id="carouselIndicators" class="carousel mx-auto slide" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
@@ -172,7 +212,7 @@
               </div> -->
         </div>
 
-        <div class="row mt-5 my-0 imgw">
+        <div class="row mt-5 my-0 img">
           <div id="imgback" class="col px-0">
             <div class="col imgover">
               <h3>Some words</h3>
@@ -209,10 +249,16 @@
                 </div>
             </div>
         </div>
-
+        <!-- Bottom image -->
         <div class="row mt-5 my-0">
-          <div class="col px-0 img">
-            <img class="img-fluid" src="img/anshu-a-7n5_0j7b7Hg-unsplash.jpg" alt="">
+          <div id="bottomImg" class="col">
+            <!-- <blockquote class="blockquote text-center">
+              <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, facere.</p>
+              <footer class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </footer>
+            </blockquote> -->
+            <!-- <img class="img-fluid" src="img/anshu-a-7n5_0j7b7Hg-unsplash.jpg" alt=""> -->
           </div>
         </div>
 
@@ -292,8 +338,7 @@
 
      <!-- JS -->
      <script src="style.js"></script>
-    <!-- flicky -->
-     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
  
     <!-- modal -->
     <script>

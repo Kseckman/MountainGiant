@@ -14,6 +14,7 @@ body{
     background-image: linear-gradient(to bottom, rgb(24, 24, 24), rgb(87, 87, 87), rgb(131, 130, 130));
 } */
 
+/* 1 navBar--- */
 nav li{
     padding-left: 10px ;
 }
@@ -39,7 +40,7 @@ nav li{
 }
 
 
-/* header */
+/* 2 header--- */
 #header{
     background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80');
     background-size:cover;
@@ -52,41 +53,96 @@ nav li{
     justify-content: center;
 }
 
-/* flicity */
-.carousel {
-    background: #EEE;
-  }
-  
-  .carousel-cell {
-    width: 28%;
-    height: 200px;
+/* 3 flicity--- */
+#cell1,
+#cell2,
+#cell3,
+#cell4,
+#cell5{
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+
+#cell1{
+    background-image: url('../img/anshu-a-7n5_0j7b7Hg-unsplash.jpg');
+}
+#cell2{
+    background-image: url('../img/josh-sorenson-FvKpUZCbZ-s-unsplash.jpg');
+}  
+#cell3{
+    background-image: url('../img/supply-USghnHKesaM-unsplash.jpg');
+}
+#cell4{
+    background-image: url('../img/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg');
+}
+#cell5{
+    background-image: url('../img/sinval-carvalho-WbEibGKHBMY-unsplash.jpg');
+}
+
+.carousel-cell {
+    width: 50%;
+    height: 400px;
     margin-right: 10px;
-    background: #8C8;
     border-radius: 5px;
-    counter-increment: carousel-cell;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+
   }
+
+  .overlay{
+    background: rgb(0, 0, 0, 0.2);
+    padding: 0 1rem;
+    border-radius: 2%;
+    transition: background .2s, padding-bottom .2s ;
+  }
+
+  .overlay:hover{
+    background: rgb(0, 0, 0, 0.4);
+    padding-bottom: 3px;
+  }
+
   
-  .carousel-cell.is-selected {
+
+  /* .carousel-cell.is-selected {
     background: #ED2;
-  }
+  } */
   
-  /* cell number */
+      /* cell number */
   .carousel-cell:before {
     display: block;
     text-align: center;
-    content: counter(carousel-cell);
     line-height: 200px;
     font-size: 80px;
     color: white;
   }
+
+
+  @media screen and ( max-width: 992px ) {
+    .carousel-cell{
+        height: 275px;
+        width: 60%;
+    }
+  }
   
 
-/* featured */
+  @media screen and ( max-width: 768px ) {
+    .carousel-cell{
+        height: 250px;
+        width: 65%;
+    }
+  }
+  
+
+/* 4 Experience--- */
 .featured p{
     line-height: 2.5;
 }
-
-
 
 #imgback{
     background-image: url('https://images.unsplash.com/photo-1498855926480-d98e83099315?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
@@ -107,7 +163,7 @@ nav li{
     flex-direction: column;
 }
 
-/* catagory */ 
+/* 5 catagory--- */ 
  .crop img {
     width: 100%;
     height: 200px;
@@ -127,8 +183,24 @@ nav li{
     box-shadow: 1px 5px 5px 4px rgba(0,0,0,0.27);
    }
 
+/* 6 homepage bottom image--- */
+  #bottomImg{
+    background-image: url('../img/anshu-a-7n5_0j7b7Hg-unsplash.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+/* 
+  .blockquote{
+    background-color: rgb(0, 0, 0,.1);
+    color: white;
+  } */
 
- /* Subscribe */
+ /* 7 Subscribe--- */
 .sub{
     height: 30vh;
 }
@@ -161,7 +233,7 @@ nav li{
 }
 
 
-/* shop */
+/* 8 shop--- */
 .shop img{
     width: 100%;
     height: 200px;
@@ -175,7 +247,7 @@ nav li{
 }
 
 
-/* about image */
+/* 9 about image---*/
 #aboutBackground{
     background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
@@ -188,7 +260,7 @@ nav li{
 }
 
 
-/* footer */
+/* 10 footer--- */
 .footer{
     background-color: rgb(231, 231, 231);
     background-image: linear-gradient(to bottom, rgb(44, 44, 44), rgb(179, 177, 177), white);
