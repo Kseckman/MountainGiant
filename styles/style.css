@@ -7,7 +7,7 @@ body{
     font-family: 'Merriweather', serif;
 }
 
-
+/* 1 buttons */
 .btn{
     border-radius: 0;
 }
@@ -21,7 +21,10 @@ body{
     background: #333333;
 }
 
-/* 1 navBar--- */
+
+
+/* 2 navBar--- */
+
 .bg-custom{
     background: #202020;
 }
@@ -53,7 +56,8 @@ nav li{
 
 
 
-/* 2 header--- */
+/* 3 header--- */
+
 #header{
     background-image: url('https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80');
     background-size:cover;
@@ -68,7 +72,8 @@ nav li{
 
 
 
-/* 3 flicity--- */
+/* 4 flicity--- */
+
 #cell1,
 #cell2,
 #cell3,
@@ -148,7 +153,8 @@ nav li{
   }
   
 
-/* 4 Reviews--- */
+
+/* 5 Reviews--- */
 
 .iconArrow{
     margin:auto;
@@ -172,7 +178,6 @@ nav li{
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     height: 70vh;
 }
 
@@ -187,7 +192,10 @@ nav li{
     flex-direction: column;
 }
 
-/* 5 catagory--- */ 
+
+
+/* 6 catagory--- */ 
+
 .catagory img{
     width: 100%;
     object-fit: cover;
@@ -211,7 +219,10 @@ nav li{
     box-shadow: 1px 5px 5px 4px rgba(0,0,0,0.27);
    }
 
-/* 6 homepage bottom image--- */
+
+
+/* 7 homepage bottom image--- */
+
   #bottomImg{
     background-image: url('../img/anshu-a-7n5_0j7b7Hg-unsplash.jpg');
     background-size:cover;
@@ -229,23 +240,15 @@ nav li{
   } */
 
  /* 7 Subscribe--- */
+
 .sub{
     height: 30vh;
 }
 
 
-/* not working yet */
-@media only screen and (max-width:768px){
-    .poly{
-        height: 150px;
-    }
-    .poly2{
-        height: 150px;
-    }
-}
 
+/* 9 shop--- */
 
-/* 8 shop--- */
 .shop img{
     width: 100%;
     height: 200px;
@@ -259,7 +262,9 @@ nav li{
 }
 
 
-/* 9 about image---*/
+
+/* 10 about image---*/
+
 #aboutBackground{
     background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
     background-size: cover;
@@ -273,7 +278,7 @@ nav li{
 
 
 
-/* 10 cart--- */
+/* 11 cart--- */
 
 .card-bg{
     background: #eee;
@@ -301,8 +306,10 @@ nav li{
         font-size: 11px
     }
     
+    
 
-/* 11 footer--- */
+/* 12 footer--- */
+
 .footer{
     background-color: rgb(231, 231, 231);
     background-image: linear-gradient(to bottom, rgb(44, 44, 44), rgb(179, 177, 177), white);
